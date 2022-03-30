@@ -6,3 +6,8 @@ add_executable(run_mapping_offline run_mapping_offline.cc)
 target_link_libraries(run_mapping_offline
         ${PROJECT_NAME} gflags
         )
+
+add_executable(run_mapping_coral run_mapping_coral.cpp)
+target_link_libraries(run_mapping_coral
+                      ${PROJECT_NAME} gflags
+                      )
